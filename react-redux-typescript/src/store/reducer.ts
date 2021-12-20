@@ -1,5 +1,3 @@
-import * as actionTypes from "./actionTypes";
-
 const initialSate: ArticleState = {
     articles: [
         {

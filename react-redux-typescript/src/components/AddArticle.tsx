@@ -4,8 +4,10 @@ type Props = {
     saveArticle: (article: IArticle | any) => void;
 }
 
-const AddArticle: FC<Props> = ({ saveArticle }) => {
+export const AddArticle: FC<Props> = ({ saveArticle }) => {
+
     const [article, setArticle] = useState<IArticle | {}>();
+
     const handleArticleData = (e: FormEvent<HTMLInputElement>) => {
         setArticle({
             ...article,
@@ -26,5 +28,3 @@ const AddArticle: FC<Props> = ({ saveArticle }) => {
         </form>
     )
 }
-
-export default AddArticle
